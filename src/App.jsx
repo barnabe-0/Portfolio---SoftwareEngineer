@@ -1,33 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import ProjectDetail from "./components/ProjectDetail";
 
 const App = () => {
   return (
-    <>
+    <div className="min-h-screen bg-[#01191d]">
       <Navbar />
       <main>
-        <section id="home" className="min-h-screen">
-          <Hero />
-        </section>
-        <section id="about" className="min-h-screen">
-          <About />
-        </section>
-        <section id="skills" className="min-h-screen">
-          <Skills />
-        </section>
-        <section id="portfolio" className="min-h-screen">
-          {/* <Portfolio /> */}
-        </section>
-        <section id="testimonials" className="min-h-screen">
-          {/* <Testimonials /> */}
-        </section>
-        <section id="contact" className="min-h-screen">
-          {/* <Contact /> */}
-        </section>
+        <Hero />
+        <About />
+        <Skills />
+        <Portfolio />
+        <Contact />
       </main>
-    </>
+      <Footer />
+    </div>
   );
 };
+
 export default App;

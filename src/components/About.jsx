@@ -5,7 +5,7 @@ import { CiLocationArrow1 } from 'react-icons/ci';
 
 const About = () => {
     return (
-        <section className="pt-60 pb-20 px-6 bg-gradient-to-r from-[#01191d] to-[#022c2b]">
+    <section className="pt-16 pb-12 px-6 bg-gradient-to-l from-[#01191d] to-[#022c2b]">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-4 text-gray-300">
                     SOBRE <span className="text-outline">MIM</span>

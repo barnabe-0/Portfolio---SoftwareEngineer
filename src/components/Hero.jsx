@@ -7,22 +7,23 @@ import { LiaLinkedin } from 'react-icons/lia';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-16 pb-20">
+    <section id='home' className="relative min-h-screen flex items-center">
             <div 
-                className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+                className="absolute inset-0"
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
+                    backgroundRepeat: 'no-repeat',
+                    opacity: 0.9
                 }}
             >
             </div>
-            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#022c2b]/95 via-[#01191d]/80 to-[#01191d]/30"></div>
 
             {/* content */}
-            <div className="relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center">
-                <div className="flex-1 text-center md:text-left">
+            <div className="relative z-10 container mx-auto px-6">
+                <div className="w-full md:max-w-[60%] text-center md:text-left">
                     <h3 className="text-lg font-light capitalize tracking-wide text-teal-500">
                         Eu sou Nicolas Barnabe da Cruz
                     </h3>

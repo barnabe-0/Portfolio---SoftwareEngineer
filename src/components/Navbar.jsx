@@ -1,6 +1,7 @@
 
 import { Fragment, useEffect, useState } from 'react';
 import { navItems } from '../data/data';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('home');
@@ -29,8 +30,8 @@ const Navbar = () => {
 
     return (
         <Fragment>
-            <nav className="fixed top-0 w-full z-50 bg-black/95 py-4 backdrop-blur-sm">
-                <div className="container mx-auto flex items-center justify-between px-6">
+            <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-sm border-b border-white/10">
+                <div className="container mx-auto flex items-center justify-between px-6 py-4">
                     <div className="text-2xl text-white font-bold text-outline">NBC</div>
                     <ul className="hidden md:flex space-x-8 text-white text-sm uppercase">
                         {
@@ -38,6 +39,10 @@ const Navbar = () => {
                                 <li 
                                     key={item.id} 
                                     className={`hover:text-teal-500 cursor-pointer transition-colors duration-300 ${activeSection === item.id ? 'text-teal-500' : ''}`}
+                                    onClick={() => {
+                                        const section = document.getElementById(item.id);
+                                        section?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
                                 >
                                     {item.label}
                                 </li>
