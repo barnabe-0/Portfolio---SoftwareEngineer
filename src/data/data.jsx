@@ -96,37 +96,9 @@ export const navItems = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "portfolio", label: "Portfolio" },
-  { id: "testimonials", label: "Testimonials" },
   { id: "contact", label: "Contact" },
 ];
 
-// Testimonials data
-export const testimonials = [
-  {
-    name: "Sarah Johnson",
-    position: "CEO, TechStart",
-    content:
-      '"Imam delivered exceptional work on our website redesign. His attention to detail and communication throughout the project was impressive."',
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    name: "Michael Chen",
-    position: "Product Manager, InnovateCo",
-    content:
-      '"Working with Imam was a great experience. He transformed our complex requirements into a beautiful, user-friendly interface."',
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    name: "David Wilson",
-    position: "Founder, StartupHub",
-    content:
-      '"Imam\'s technical skills and creative design solutions helped us create an engaging platform that our users love. Highly recommended!"',
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-];
 
 // Portfolio data
 import ecommerceSustentavel from '../assets/ecommerce-sustentavel.jpg';

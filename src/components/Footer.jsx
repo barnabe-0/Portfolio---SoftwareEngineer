@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -25,6 +25,15 @@ const Footer = () => {
                             aria-label="LinkedIn Profile"
                         >
                             <FaLinkedin size={24} />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/neo.nicolas1/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 bg-white/10 rounded-full hover:bg-white/20 text-gray-300 hover:text-teal-500 transition-all duration-300 transform hover:-translate-y-1"
+                            aria-label="Instagram Profile"
+                        >
+                            <FaInstagram size={24} />
                         </a>
                     </div>
 
