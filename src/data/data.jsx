@@ -52,64 +52,40 @@ export const skillsData = [
     skills: [
       { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
       { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-      { name: "SASS", icon: <FaSass className="text-pink-400" /> },
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
       { name: "React JS", icon: <FaReact className="text-cyan-400" /> },
-      { name: "Angular", icon: <FaAngular className="text-red-500" /> },
-      { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-      { name: "Next JS", icon: <RiNextjsFill className="text-white" /> },
       {
         name: "Tailwind CSS",
         icon: <RiTailwindCssFill className="text-teal-400" />,
       },
-      {
-        name: "GSAP",
-        icon: <MdOutlineSettingsApplications className="text-green-500" />,
-      },
-      {
-        name: "Material UI",
-        icon: <GiMaterialsScience className="text-blue-400" />,
-      },
-      { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Spring Boot", icon: <SiSpring className="text-green-600" /> },
       { name: "Node JS", icon: <FaNodeJs className="text-green-400" /> },
-      { name: "Express JS", icon: <SiExpress className="text-gray-300" /> },
-      { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-      { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="text-sky-500" /> },
+      { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
     ],
   },
   {
     title: "Languages",
     skills: [
-      { name: "C", icon: <SiC className="text-blue-400" /> },
-      { name: "C++", icon: <SiCplusplus className="text-blue-500" /> },
       { name: "Java", icon: <DiJava className="text-red-600" /> },
       { name: "Python", icon: <DiPython className="text-yellow-400" /> },
-      { name: "C#", icon: <TbBrandCSharp className="text-purple-400" /> },
       {
         name: "JavaScript",
         icon: <SiJavascript className="text-yellow-400" />,
       },
-      { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
     ],
   },
   {
     title: "Tools",
     skills: [
-      { name: "Git", icon: <SiGit className="text-orange-500" /> },
       { name: "GitHub", icon: <SiGithub className="text-white" /> },
       { name: "VS Code", icon: <DiVisualstudio className="text-blue-500" /> },
       { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
       { name: "Vercel", icon: <SiVercel className="text-white" /> },
-      { name: "Netlify", icon: <SiNetlify className="text-teal-400" /> },
-      { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
     ],
   },
 ];
@@ -120,57 +96,44 @@ export const navItems = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "portfolio", label: "Portfolio" },
-  { id: "testimonials", label: "Testimonials" },
   { id: "contact", label: "Contact" },
 ];
 
-// Testimonials data
-export const testimonials = [
-  {
-    name: "Sarah Johnson",
-    position: "CEO, TechStart",
-    content:
-      '"Imam delivered exceptional work on our website redesign. His attention to detail and communication throughout the project was impressive."',
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    name: "Michael Chen",
-    position: "Product Manager, InnovateCo",
-    content:
-      '"Working with Imam was a great experience. He transformed our complex requirements into a beautiful, user-friendly interface."',
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    name: "David Wilson",
-    position: "Founder, StartupHub",
-    content:
-      '"Imam\'s technical skills and creative design solutions helped us create an engaging platform that our users love. Highly recommended!"',
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-];
 
 // Portfolio data
+import ecommerceSustentavel from '../assets/ecommerce-sustentavel.jpg';
+import siscamex from '../assets/siscamex.jpg';
+
 export const portfolioItems = [
   {
+    id: 1,
     title: "E-commerce Website",
     category: "Web Design",
-    image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    image: ecommerceSustentavel,
+    description: "Um e-commerce sustentável desenvolvido com React e Node.js",
+    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    github: "https://github.com/seu-usuario/ecommerce-sustentavel",
+    live: "https://ecommerce-sustentavel.vercel.app"
   },
   {
-    title: "Fitness App UI",
+    id: 2,
+    title: "SisCamEx",
     category: "UI/UX Design",
-    image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    image: siscamex,
+    description: "Sistema de gerenciamento de câmbio estudantil",
+    technologies: ["React", "Tailwind CSS", "Node.js", "MySQL"],
+    github: "https://github.com/seu-usuario/siscamex",
+    live: "https://siscamex.vercel.app"
   },
   {
-    title: "Analytics Dashboard",
+    id: 3,
+    title: "Projeto Passa Bola",
     category: "Web Development",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
+    description: "Plataforma de gerenciamento de eventos esportivos",
+    technologies: ["React", "Node.js", "MongoDB"],
+    github: "https://github.com/seu-usuario/passa-bola",
+    live: "https://passa-bola.vercel.app"
   },
 ];
 export const experiences = [
