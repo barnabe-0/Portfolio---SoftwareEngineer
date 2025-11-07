@@ -111,4 +111,6 @@ emailjs.sendForm(serviceID, templateID, form.current, publicKey)
 
 NICOLAS BARNABE DA CRUZ RM:561997
 
+LINK VERCEL: https://portfolio-software-engineer-1vxw.vercel.app/
+
 
